@@ -1,0 +1,253 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    min-height: 75px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 0px 20px;
+    top: 0;
+    background-color: #eee;
+}
+
+.logo {
+    width: 60vw;
+    max-width: 100%;
+    display: block;
+}
+
+img {
+    width: 60vw;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#navbar {
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 40%;
+    font-weight: 400;
+}
+
+a {
+    width: 35vh;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+}
+
+main, footer {
+    width: 80%;
+    margin: auto;
+}
+
+form {
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.email {
+    display: block;
+    margin-top: 1rem;
+    width: 17rem;
+    height: 2rem;
+    text-align: start;
+}
+
+.btn {
+    display: block;
+    margin-top: 1rem;
+    background-color: rgb(241, 196, 15);
+    width: 10rem;
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    border-style: initial;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+#features {
+    margin-top: 6rem;
+    width: 75%;
+    
+}
+
+.fa {
+    color: orangered;
+    margin-right: 6rem;
+}
+
+.icon {
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+}
+
+i {
+    max-width: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-top: -1rem;
+}
+
+#how-it-works {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#video {
+    height: 315px;
+    max-width: 560px;
+    width: 100%;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    margin-bottom: 6rem;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.offers {
+    border-style: solid;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h4 {
+    background-color: rgb(221, 221, 221);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.offers > h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.offers > p {
+    padding: 1rem;
+}
+
+.btn2 {
+    background-color: rgb(241, 196, 15);
+    width: 10rem;
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    border-style: initial;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: rgb(221, 221, 221);
+    padding: 1rem;
+    text-align: right;
+    margin-top: 3rem;
+}
+
+footer > p {
+    margin-top: 1rem;
+    color: rgb(68, 68, 68);
+    font-size: 0.9rem;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 768px) {
+    main, footer {
+        width: 90%;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    #pricing {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .offers {
+        margin-bottom: 1rem;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    main, footer {
+        width: 90%;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    #pricing {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .offers {
+        margin-bottom: 1rem;
+    }
+}

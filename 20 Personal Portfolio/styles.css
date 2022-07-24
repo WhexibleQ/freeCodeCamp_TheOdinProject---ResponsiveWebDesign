@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+:root {
+    --white: #f0f0f0;
+    --red: #be3144;
+    --blue: #45567d;
+    --gray: #303841;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--white);
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    top: 0;
+    left: 0;
+}
+
+.nav-list {
+    display: flex;
+    padding-right: 2rem;
+    gap: 2rem;
+    font-size: 2.2rem;
+}
+
+.nav-list a {
+    display: block;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background-color: var(--blue);
+    display: block;
+}
+
+.welcome {
+    background-color: var(--gray);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome h1 {
+    font-size: 6rem;
+}
+
+.welcome p {
+    color: var(--red);
+    width: 100%;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#projects {
+    padding: 10rem 1rem;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: center;
+    padding: 3rem;
+    font-size: 4.2rem;
+}
+
+.project-tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-tile {
+    margin: 2rem;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    display: block;
+}
+
+.project-tile img {
+    width: 24rem;
+    height: 24rem;
+    cursor: pointer;
+    display: block;
+}
+
+.project-tile a {
+    display: block;
+    text-align: center;
+    background-color: var(--gray);
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.code {
+    color: var(--gray);
+    transition: color 0.3s ease-out;
+}
+
+
+.project-tile:hover .code {
+    color: #ff7f50;
+}
+
+.button {
+    color: var(--white);
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 0.8rem;
+    background-color: var(--gray);
+    border-radius: 1rem;
+}
+
+.button:hover {
+    background-color: var(--red);
+}
+
+.work {
+    height: 90vh;
+    background-color: var(--gray);
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.work h1 {
+    width: 80%;
+}
+
+.work p {
+    font-weight: 200;
+    font-style: italic;
+    width: 80%;
+    
+}
+
+.links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.links a {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--gray);
+    border-top: 0.3rem solid var(--red);
+    padding: 2rem 3rem;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5rem;
+    align-items: flex-end;
+}
+
+
+
+svg {
+    width: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    fill: var(--white);
+}
