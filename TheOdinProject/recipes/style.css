@@ -1,0 +1,23 @@
+h1 {
+    color: chocolate;
+}
+
+p {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: georgian;
+}
+
+ol {
+    list-style: lower-latin;
+}
+
+h4 {
+    color: aqua;
+}
+
+a {
+    text-decoration: solid;
+}
