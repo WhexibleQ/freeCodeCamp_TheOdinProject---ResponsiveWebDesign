@@ -4,3 +4,39 @@
     --primary: #f9faf8;
     --secondary: #e5e7eb;
 }
+
+* {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    background-color: var(--bg);
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+
+}
+
+li {
+    align-items: flex-end;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--primary);
+}
