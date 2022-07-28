@@ -16,6 +16,7 @@
 
 body {
     width: 100vw;
+    max-width: 100%;
 }
 
 button {
@@ -37,6 +38,13 @@ button {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+}
+
+.logo {
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -55,7 +63,9 @@ a {
     color: var(--primary);
     display: flex;
     width: 100%;
-    padding: 5rem 10rem;
+    padding: 7rem 10rem;
+    align-items: center;
+    align-content: center;
 }
 
 .hero-text {
@@ -114,7 +124,8 @@ a {
     color: var(--bg);
     font-size: 36px;
     font-style: italic;
-    padding: 5rem 10rem;
+    padding: 5rem 15rem;
+    font-weight: 300;
 }
 
 .quote figcaption {
@@ -125,14 +136,14 @@ a {
 }
 
 #contact {
-    padding: 10rem 0 10rem 0;
+    padding: 1rem 0 2rem 0;
 }
 
 .contact {
     display: flex;
     background-color: var(--button);
     color: var(--primary);
-    margin: 2rem 20rem 0 20rem;
+    margin: 1rem 20rem 0 20rem;
     border-radius: 1rem;
     height: 10rem;
     align-items: center;
@@ -153,5 +164,9 @@ a {
 }
 
 footer {
-    
+    display: flex;
+    background-color: var(--bg);
+    justify-content: center;
+    color: var(--secondary);
+    padding: 2rem;
 }
